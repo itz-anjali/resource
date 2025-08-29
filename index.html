@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Resource Hub Project Report</title>
+    <!-- Google Fonts for a clean, professional look -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Tailwind CSS for modern styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom styles for smoother animations and font */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f4f8; /* Fresh, light background color */
+            color: #374151;
+        }
+        .section-fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 1s ease-out, transform 1s ease-out;
+        }
+        .section-fade-in.is-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .tech-card {
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+        .tech-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header and Navigation -->
+    <header class="bg-white sticky top-0 z-50 shadow-md">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-gray-800">The Resource Hub</a>
+            <div class="space-x-4 hidden md:flex">
+                <a href="#problem" class="text-gray-600 hover:text-blue-600 transition duration-300">The Problem</a>
+                <a href="#solution" class="text-gray-600 hover:text-blue-600 transition duration-300">Our Solution</a>
+                <a href="#technologies" class="text-gray-600 hover:text-blue-600 transition duration-300">Technologies</a>
+                <a href="#team" class="text-gray-600 hover:text-blue-600 transition duration-300">Our Team</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="py-20 md:py-32 bg-gradient-to-r from-blue-500 to-indigo-600 text-white text-center">
+        <div class="container mx-auto px-6">
+            <h1 class="text-3xl md:text-5xl lg:text-6xl font-extrabold leading-tight mb-4 animate-pulse">
+                The Resource Hub
+            </h1>
+            <p class="text-lg md:text-xl mb-8 opacity-90">
+                A Comprehensive Digital Library for Every Student
+            </p>
+            <div class="flex justify-center space-x-4">
+                <a href="#solution" class="bg-white text-blue-600 font-semibold py-3 px-8 rounded-full shadow-lg hover:shadow-xl transform hover:scale-105 transition duration-300">
+                    See Our Solution
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- The Problem Section -->
+    <section id="problem" class="py-16 md:py-24 bg-white rounded-xl shadow-lg section-fade-in">
+        <div class="container mx-auto px-6">
+            <div class="md:flex md:items-center md:space-x-12">
+                <div class="md:w-1/2 mb-8 md:mb-0">
+                    <img src="https://placehold.co/600x400/3b82f6/ffffff?text=Students+Looking+for+Resources" alt="Students looking for resources" class="rounded-xl shadow-lg">
+                </div>
+                <div class="md:w-1/2">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">The Problem</h2>
+                    <p class="text-gray-600 leading-relaxed mb-4">
+                        We noticed a big problem. When new students join the college or when exams are near, they struggle to find the right study materials. Books, videos, syllabi, and old question papers are scattered everywhere online, making it stressful and time-consuming to find them.
+                    </p>
+                    <p class="text-gray-600 leading-relaxed">
+                        This problem affects everyone, especially students in the BCA department, 2nd year. We felt it was time for a better way.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Solution Section -->
+    <section id="solution" class="py-16 md:py-24 bg-gray-100 section-fade-in">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Our Solution</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                    Introducing The Resource Hub, a central place for all academic resources.
+                </p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Feature 1 -->
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transform hover:scale-105 transition duration-300">
+                    <div class="text-blue-500 mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-12 h-12 mx-auto">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.002v.004m0-.004c2.213-.198 4.29.626 5.892 2.115m-5.892-2.115C9.754 5.804 7.677 6.628 6.075 8.117m11.85 2.502c.08.313.125.65.125 1c0 2.21-1.79 4-4 4s-4-1.79-4-4c0-.35.045-.687.125-1m11.85 2.502h.008M6.075 8.117a5.952 5.952 0 0 1-.183 1.096m0-1.096c-.305.518-.544 1.077-.723 1.668m-.183-1.096A6.037 6.037 0 0 1 6.075 8.117M12 18.002a2.001 2.001 0 0 1-2-2m2 2a2.001 2.001 0 0 1 2-2m-2 2a2.001 2.001 0 0 1-2-2m2 2v-.004m0 .004c-2.213.198-4.29-.626-5.892-2.115M12 18.002a2.001 2.001 0 0 1-2-2m2 2a2.001 2.001 0 0 1 2-2m-2 2a2.001 2.001 0 0 1-2-2m2 2h.008" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Centralized Access</h3>
+                    <p class="text-gray-600">
+                        No more searching on different websites. All resources for all courses are in one, organized place.
+                    </p>
+                </div>
+                <!-- Feature 2 -->
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transform hover:scale-105 transition duration-300">
+                    <div class="text-blue-500 mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-12 h-12 mx-auto">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.002v.004m0-.004c2.213-.198 4.29.626 5.892 2.115m-5.892-2.115C9.754 5.804 7.677 6.628 6.075 8.117m11.85 2.502c.08.313.125.65.125 1c0 2.21-1.79 4-4 4s-4-1.79-4-4c0-.35.045-.687.125-1m11.85 2.502h.008M6.075 8.117a5.952 5.952 0 0 1-.183 1.096m0-1.096c-.305.518-.544 1.077-.723 1.668m-.183-1.096A6.037 6.037 0 0 1 6.075 8.117M12 18.002a2.001 2.001 0 0 1-2-2m2 2a2.001 2.001 0 0 1 2-2m-2 2a2.001 2.001 0 0 1-2-2m2 2v-.004m0 .004c-2.213.198-4.29-.626-5.892-2.115M12 18.002a2.001 2.001 0 0 1-2-2m2 2a2.001 2.001 0 0 1 2-2m-2 2a2.001 2.001 0 0 1-2-2m2 2h.008" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Structured Format</h3>
+                    <p class="text-gray-600">
+                        Resources are carefully organized by department, year, subject, and type, making it easy to find what you need quickly.
+                    </p>
+                </div>
+                <!-- Feature 3 -->
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transform hover:scale-105 transition duration-300">
+                    <div class="text-blue-500 mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-12 h-12 mx-auto">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.002v.004m0-.004c2.213-.198 4.29.626 5.892 2.115m-5.892-2.115C9.754 5.804 7.677 6.628 6.075 8.117m11.85 2.502c.08.313.125.65.125 1c0 2.21-1.79 4-4 4s-4-1.79-4-4c0-.35.045-.687.125-1m11.85 2.502h.008M6.075 8.117a5.952 5.952 0 0 1-.183 1.096m0-1.096c-.305.518-.544 1.077-.723 1.668m-.183-1.096A6.037 6.037 0 0 1 6.075 8.117M12 18.002a2.001 2.001 0 0 1-2-2m2 2a2.001 2.001 0 0 1 2-2m-2 2a2.001 2.001 0 0 1-2-2m2 2v-.004m0 .004c-2.213.198-4.29-.626-5.892-2.115M12 18.002a2.001 2.001 0 0 1-2-2m2 2a2.001 2.001 0 0 1 2-2m-2 2a2.001 2.001 0 0 1-2-2m2 2h.008" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Interactive & Easy to Use</h3>
+                    <p class="text-gray-600">
+                        The website is built to be simple and easy to use on any device, with a clean design and smooth animations.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technologies Section -->
+    <section id="technologies" class="py-16 md:py-24 bg-white rounded-xl shadow-lg section-fade-in">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Technologies Used</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                    The Resource Hub is built using a modern and robust web development stack.
+                </p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+                <!-- HTML Card -->
+                <div class="bg-white p-8 rounded-xl shadow-lg tech-card">
+                    <svg class="h-16 w-16 mx-auto mb-4 text-orange-500" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5.5 2L5 3.5V20.5L5.5 22L12 20.245L18.5 22L19 20.5V3.5L18.5 2H5.5ZM17.436 18.916L12 17.514L6.564 18.916L6.924 14.5H17.076L17.436 18.916Z" fill="currentColor"/>
+                    </svg>
+                    <h3 class="text-2xl font-semibold mb-2 text-gray-800">HTML</h3>
+                    <p class="text-gray-600">
+                        HTML (HyperText Markup Language) is the foundation of our website. It structures the content and tells the browser what each element is, like headings, paragraphs, and images.
+                    </p>
+                </div>
+                <!-- CSS Card -->
+                <div class="bg-white p-8 rounded-xl shadow-lg tech-card">
+                    <svg class="h-16 w-16 mx-auto mb-4 text-blue-500" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 2C6.477 2 2 6.477 2 12C2 17.523 6.477 22 12 22C17.523 22 22 17.523 22 12C22 6.477 17.523 2 12 2ZM12 4C16.418 4 20 7.582 20 12C20 16.418 16.418 20 12 20C7.582 20 4 16.418 4 12C4 7.582 7.582 4 12 4ZM10 17L14 7L10 7L14 17L10 17Z" fill="currentColor"/>
+                    </svg>
+                    <h3 class="text-2xl font-semibold mb-2 text-gray-800">CSS</h3>
+                    <p class="text-gray-600">
+                        CSS (Cascading Style Sheets) makes our website beautiful. We used it to add colors, fonts, layout, and the smooth animations you see. We used Tailwind CSS for a modern design.
+                    </p>
+                </div>
+                <!-- JavaScript Card -->
+                <div class="bg-white p-8 rounded-xl shadow-lg tech-card">
+                    <svg class="h-16 w-16 mx-auto mb-4 text-yellow-500" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 2C6.477 2 2 6.477 2 12C2 17.523 6.477 22 12 22C17.523 22 22 17.523 22 12C22 6.477 17.523 2 12 2ZM12 4C16.418 4 20 7.582 20 12C20 16.418 16.418 20 12 20C7.582 20 4 16.418 4 12C4 7.582 7.582 4 12 4ZM10 17L14 7L10 7L14 17L10 17Z" fill="currentColor"/>
+                    </svg>
+                    <h3 class="text-2xl font-semibold mb-2 text-gray-800">JavaScript</h3>
+                    <p class="text-gray-600">
+                        JavaScript adds the smarts and interactivity. It's used for the smooth scrolling, fade-in animations, and other dynamic features that make the report feel alive.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Team Section -->
+    <section id="team" class="py-16 md:py-24 bg-white rounded-xl shadow-lg section-fade-in">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Our Team: The Coders</h2>
+            <p class="text-lg text-gray-600 max-w-2xl mx-auto mb-8">
+                This project was created by the dedicated team of BCA 2nd year students. We are passionate about using our skills to solve real-world problems.
+            </p>
+            <img src="https://placehold.co/200x200/4f46e5/ffffff?text=Team+Logo" alt="The Coders Team Logo" class="rounded-full w-32 h-32 mx-auto mb-4 border-4 border-blue-500">
+            <h3 class="text-2xl font-semibold text-gray-800">Project: Project Resources</h3>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2024 The Coders. All Rights Reserved.</p>
+            <p class="text-sm mt-2">Built with ❤️ for College of Commerce.</p>
+        </div>
+    </footer>
+
+    <script>
+        // JavaScript for smooth animations and interaction
+        document.addEventListener("DOMContentLoaded", function() {
+            // Function to handle smooth scrolling for navigation links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
+
+            // Intersection Observer for fade-in effect on scroll
+            const sections = document.querySelectorAll('.section-fade-in');
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('is-visible');
+                    }
+                });
+            }, {
+                rootMargin: '0px',
+                threshold: 0.2
+            });
+
+            sections.forEach(section => {
+                observer.observe(section);
+            });
+        });
+    </script>
+</body>
+</html>
